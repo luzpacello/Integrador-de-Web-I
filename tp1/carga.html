@@ -1,0 +1,78 @@
+<!--
+Carga servirá para que una persona encargada de productos pueda cargar la información de un producto,
+deberá contener los siguientes campos: titulo (input), imágen (file), tipo de producto (select o radio), precio
+(input), descripcion (textarea), características (check)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carga</title>
+        <!--  -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Carga de productos</h1>
+            <nav class="link_container">
+                <a class="link_header" href="ficha.html" >Ficha de productos</a>
+                <a class="link_header" href="lista.html" >Lista de productos</a>
+            </nav>
+        </div>
+        <div class="content_carga">
+            <fieldset id="formu">
+                <legend>Complete con los datos del producto</legend>
+                <div class="formulario">
+                    <form action="#" method="get">
+                        <label for="nombre_p">Nombre del producto</label>
+                        <input type="text" name="nombre_p" id="nombre_p" placeholder="Ej.: hamburguesa">
+                        <br>
+                        <div class="grupo_form">
+                            <label for="desc_p">descripcion</label>
+                            <textarea name="desc_p" id="desc_p" cols="30" rows="10"></textarea>
+                        </div>
+                        <label for="precio_p">Precio</label>
+                        <input type="text" name="precio_p" id="precio_p" placeholder="$">
+                        <br>
+                        <label for="imagen_p">imagen</label>
+                        <input type="file" id="imagen_p" name="imagen_p" multiple>
+                        <br>
+                        <label for="tipo">tipo de producto</label>
+                        <select name="tipo_product" id="tipo_product">
+                            <option value="carnes">carne</option>
+                            <option value="lacteos">lacteos</option>
+                            <option value="verduleria">verduleria</option>
+                            <option value="panaderia">panaderia</option>
+                        </select>
+                        <br>
+                        <h3>Caracteristicas</h3>
+                        <div class="caracteristicas">
+                            <label for="vegano">Vegano</label>
+                            <input type="radio" name="caracteristicas" id="vegano">
+                            <label for="sin_gluten">Sin gluten</label>
+                            <input type="radio" name="caracteristicas" id="sin_gluten">
+                            <label for="orgnico">Orgnico</label>
+                            <input type="radio" name="caracteristicas" id="orgnico">
+                        </div>
+                        <h3>Clasificacion</h3>
+                        <div id="clasificacion">
+                            <label for="nuevo">Nuevo</label>
+                            <input type="radio" name="clasificacion" id="nuevo">
+                            <label for="destacado">Destacado</label>
+                            <input type="radio" name="clasificacion" id="destacado">
+                            <label for="oferta">Oferta</label>
+                            <input type="radio" name="clasificacion" id="oferta">
+                        </div>
+                        <br>
+                        <div class="botones">
+                            <button type="submit">guardar</button>
+                            <button type="reset">limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+    </body>
+</html
