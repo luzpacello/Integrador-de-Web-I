@@ -1,0 +1,67 @@
+<!--
+Lista será una tabla con las siguientes columnas para mostrar un resumen de cada producto cargado: tipo
+de producto, título, precio, características (separadas por comas)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Lista de productos</h1>
+            <div class="link_container">
+                <a class="link_header" href="carga.html" >Carga de productos</a>
+                <a class="link_header" href="ficha.html" >Ficha de productos</a>
+            </div>
+        </div>
+        <div class="lista">
+            <table style="width: 100%;border: 2px solid black;">
+                <!--tipo producto, titulo, precio, caracteristicas-->
+                <thead>
+                    <tr>
+                        <th>imagen</th>
+                        <th>tipo</th>
+                        <th>titulo</th>
+                        <th>precio($)</th>
+                        <th>caracteristicas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="descarga (1).jpeg" alt="" class="imagen"></a></td>
+                        <td>carne</td>
+                        <td>hamburguesa</td>
+                        <td>2700</td>
+                        <td>marca paty, 4 unidades</td>
+                    </tr>
+                    <tr>
+                        <td><img src="descarga (1).jpeg" alt="" class="imagen"></td>
+                        <td>lacteos</td>
+                        <td>leche</td>
+                        <td>1400</td>
+                        <td>marca serenisima, 1Lt</td>
+                    </tr>
+                    <tr>
+                        <td><img src="descarga (1).jpeg" alt="" class="imagen"></a></td>
+                        <td>panaderia</td>
+                        <td>pan</td>
+                        <td>993</td>
+                        <td>marca bimbo, 600gr</td>
+                    </tr>
+                    <tr>
+                        <td><img src="descarga (1).jpeg" alt="" class="imagen"></td>
+                        <td>verduleria</td>
+                        <td>tomate</td>
+                        <td>932</td>
+                        <td>perita, 4kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
