@@ -1,0 +1,176 @@
+/*  ------  CSS GENERAL PARA TODOS LOS .HTML    ------*/
+html, body{
+    background-color: rgb(238, 255, 250);
+    margin: 0%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* Para pantallas pequeñas*/
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(133, 187, 169);
+    padding: 10px 20px;
+}
+h1{
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 0;
+}
+.link_container{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.link_header{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+.link_header:hover, 
+.link_header:active{
+    color: rgb(41, 134, 103);
+}
+/* Para pantallas grandes*/
+@media (min-width: 600px){
+    h1{
+        flex: 1;
+        text-align: left;
+    }
+    .link_container{
+        flex: 1;
+        justify-content: center;
+        margin-top: 0;
+    }
+}
+/*  ------ HTML CARGA   ------  */
+.content_carga{
+    flex: 1;
+    background-color: rgb(249, 255, 253);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+}
+.formulario input, 
+.formulario textarea, 
+.formulario select{
+    margin-bottom: 10px;
+}
+#formu{
+    width: 80%;
+    border: 2px solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: rgb(243, 255, 251);
+}
+legend{
+    font-weight: bold;
+    font-size: large;
+    color:black;
+    padding: 0 10px;
+}
+h3{
+    margin: 1px;
+    font-size: medium;
+}
+button{
+    width: 100px;
+    height: 25px;
+    background-color: cadetblue;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.grupo_form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+.grupo_form label{
+    margin-right: 10px;
+}
+/* Para pantallas grandes*/
+@media (min-width: 600px){
+    #formu{
+        width: 50%;
+    }
+}
+/*  ------ HTML FICHA   ------  */
+.content_ficha{
+    flex: 1;
+    background-color: rgb(249, 255, 253);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#info{
+    width: 60%;
+    border: 2px solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: rgb(243, 255, 251);
+    display: flex;
+    flex-direction: row;
+}
+.panel1{
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    margin: 10px;
+}
+img{
+    border-radius: 50%;
+    width: 80%;
+}
+.panel2{
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1px;
+    align-self: center;
+}
+p, ol{
+    margin: 20px 0 20px 0;
+}
+@media (max-width: 700px){
+    #info{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .panel1{
+        margin: 0;
+    }
+}
+/*  ------ HTML LISTA   ------  */
+table{
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+.imagen{
+    width: 50px;
+}
