@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(to bottom, white, blue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+}
+header .logo {
+  margin: 20px;
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+}
+header h1 {
+  margin: 20px;
+  text-align: center;
+}/*# sourceMappingURL=SassList.css.map */

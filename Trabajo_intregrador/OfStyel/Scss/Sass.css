@@ -46,7 +46,8 @@ nav {
 }
 
 footer {
-  background: linear-gradient(100deg, #ff0055, #4d0000);
+  box-shadow: 0 10px 20px rgba(255, 0, 93, 0.6);
+  background: linear-gradient(100deg, #d80125, #4d0000);
   border-radius: 1.5rem;
   padding: 2rem;
   margin: 2rem;
