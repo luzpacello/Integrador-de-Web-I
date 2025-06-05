@@ -32,19 +32,8 @@ $color-secundario: #00c6ff; // Celeste
 .navbar-toggler{
     background-color: antiquewhite;
 }
-.carousel-inner {
-    height: 300px; /* o el alto que quieras, por ejemplo 250px, 400px, etc. */
-}
-
 .carousel-inner img {
-    height: 100%;
     width: 100%;
-    object-fit: cover; /* recorta la imagen manteniendo proporción sin deformarla */
-}
-.card-img-top{
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* recorta la imagen manteniendo proporción sin deformarla */
 }
 footer{
     @include fondo-degradado($color-primario, $color-secundario, 45deg);
