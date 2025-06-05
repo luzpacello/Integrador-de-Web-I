@@ -60,6 +60,7 @@ main {
   background: linear-gradient(to bottom, rgb(164, 163, 163), rgb(63, 63, 63));
   box-shadow: 0 8px 20px black;
   border-radius: 1.5rem;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-top: 2rem;
   margin-left: 20px;
