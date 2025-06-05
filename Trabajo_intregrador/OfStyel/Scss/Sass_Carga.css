@@ -43,16 +43,14 @@ nav {
 .box1 {
   display: inline-block;
   border: 5px solid gray;
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   padding: 20px;
 }
 
 .box2 {
   display: inline-flex;
   border: 5px solid gray;
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   padding: 17px;
 }
 
