@@ -4,7 +4,7 @@ header {
 }
 
 .owca {
-  background: linear-gradient(45deg, #007bff, #00c6ff);
+  background: linear-gradient(20deg, rgba(0, 255, 136, 0.9333333333), #1bc1f8);
   border: 2px solid gray;
   margin-top: 15px;
   min-width: 320px;
@@ -67,7 +67,7 @@ body {
     justify-content: center;
   }
   .owca {
-    background: linear-gradient(45deg, #007bff, #00c6ff);
+    background: linear-gradient(20deg, rgba(0, 255, 136, 0.9333333333), #1bc1f8);
     border: 2px solid gray;
     margin-top: 20px;
     min-width: 300px;

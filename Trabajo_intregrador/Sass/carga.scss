@@ -6,7 +6,7 @@ header {
     justify-content: center;
 }
 .owca {
-    @include fondo-degradado ($color-primario, $color-secundario, 45deg);    
+    @include fondo-degradado ($color-pri-carga, $color-sec-carga, 20deg);    
     border: 2px solid gray;
     margin-top: 15px;
     min-width: 320px;    
@@ -69,7 +69,7 @@ body {
     justify-content: center;
  }
    .owca {
-    @include fondo-degradado ($color-primario, $color-secundario, 45deg);      
+    @include fondo-degradado ($color-pri-carga, $color-sec-carga, 20deg);      
     border: 2px solid gray;
     margin-top: 20px;
     min-width: 300px;    
