@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(to bottom, white, blue);
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background: linear-gradient(to left, rgb(0, 175, 137), rgb(72, 0, 72));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  flex-direction: row;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.producto-card {
+  background: linear-gradient(to bottom, rgb(164, 163, 163), rgb(63, 63, 63));
+  box-shadow: 0 8px 20px black;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+footer {
+  background: linear-gradient(to right, red, rgb(72, 0, 72));
+}
+
+.linklist img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  header,
+  footer {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 1rem;
+  }
+  .logo {
+    height: 50px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .producto-card {
+    padding: 0.5rem;
+  }
+  .producto-card p {
+    font-size: 0.9rem;
+  }
+  .linklist img {
+    height: 40px;
+    margin: 0 5px;
+  }
+}/*# sourceMappingURL=SassList.css.map */

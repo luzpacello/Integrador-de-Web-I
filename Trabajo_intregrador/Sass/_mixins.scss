@@ -1,0 +1,8 @@
+@mixin fondo-degradado($color1, $color2, $grado) {
+    background: linear-gradient($grado, $color1, $color2);
+}
+@mixin fondo-degradado-alt($color1, $color2, $grado) {
+    background: -webkit-linear-gradient($grado, $color1, $color2);
+    background: -moz-linear-gradient($grado, $color1, $color2);
+    background: linear-gradient($grado, $color1, $color2);
+}
