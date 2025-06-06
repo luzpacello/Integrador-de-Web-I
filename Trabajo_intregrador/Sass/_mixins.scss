@@ -6,3 +6,9 @@
     background: -moz-linear-gradient($grado, $color1, $color2);
     background: linear-gradient($grado, $color1, $color2);
 }
+
+@mixin combo-fonts($pri-font, $sec-font, $weight: normal, $size: 25px) {
+    font-family: $pri-font, $sec-font;
+    font-weight: $weight;
+    font-size: $size;
+}
