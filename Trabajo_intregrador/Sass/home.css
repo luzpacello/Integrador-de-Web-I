@@ -52,6 +52,8 @@ h2 {
   background-color: rgb(220, 241, 250);
   border-radius: 15px;
   padding-bottom: 10px;
+  height: auto;
+  align-self: flex-start;
 }
 
 footer {
