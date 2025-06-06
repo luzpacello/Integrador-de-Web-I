@@ -10,8 +10,7 @@ header {
     border: 2px solid gray;
     margin-top: 15px;
     min-width: 320px;    
-    font-size: 25px;
-    font-weight: bold;
+    @include combo-fonts('Arial', 'Oswald-Regular', bold);
     border-radius: 1.5em;
     .perry{
         margin: 10px;
@@ -73,8 +72,7 @@ body {
     border: 2px solid gray;
     margin-top: 20px;
     min-width: 300px;    
-    font-size: 25px;
-    font-weight: bold;
+    @include combo-fonts('Savate-ExtraLight', 'Oswald-Regular');
     border-radius: 1.5em;
     .perry{
         margin: 10px;

@@ -8,8 +8,9 @@ header {
   border: 2px solid gray;
   margin-top: 15px;
   min-width: 320px;
-  font-size: 25px;
+  font-family: "Arial", "Oswald-Regular";
   font-weight: bold;
+  font-size: 25px;
   border-radius: 1.5em;
 }
 .owca .perry {
@@ -71,8 +72,9 @@ body {
     border: 2px solid gray;
     margin-top: 20px;
     min-width: 300px;
+    font-family: "Savate-ExtraLight", "Oswald-Regular";
+    font-weight: normal;
     font-size: 25px;
-    font-weight: bold;
     border-radius: 1.5em;
   }
   .owca .perry {
