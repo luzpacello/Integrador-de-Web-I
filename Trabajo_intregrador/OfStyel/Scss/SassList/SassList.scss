@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, white, blue);
+    background: linear-gradient(to bottom, white, rgb(54, 54, 255));
     min-height: 100vh;
 }
 header,
@@ -24,7 +24,7 @@ footer {
     color: white;
 }
 footer {
-    background: linear-gradient(to right, red, rgb(72, 0, 72));
+    background: linear-gradient(to right, rgb(0, 175, 137), rgb(150, 17, 17));
 }
 .linklist img {
     height: 50px;
@@ -54,5 +54,65 @@ h1 {
 .linklist img {
     height: 40px;
     margin: 0 5px;
+}
+}
+main {
+    flex: 1 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+.categoria {
+    margin-bottom: 3rem;
+    h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    }
+    .productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .Contenedor {
+        flex: 1 1 calc(33.333% - 1rem);
+        background: linear-gradient(to bottom, rgb(55, 32, 255), rgb(103, 212, 255));
+        box-shadow: 0 8px 20px black;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+        img {
+        height: 100px;
+        width: auto;
+        }
+        p {
+        margin: 0.5rem 0;
+        }
+    }
+    }
+}
+}
+@media (max-width: 768px) {
+main .categoria .productos .Contenedor {
+    flex: 1 1 calc(50% - 1rem);
+    }
+}
+footer {
+flex-shrink: 0;
+position: fixed;
+bottom: 0;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: clamp(10px, 50%, 50%);
+width: 95%;
+padding: 0 2rem;
+margin-left: 10px;
+align-items: center;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+border-radius: 1.5rem;
+background: linear-gradient(to right, red, rgb(72, 0, 72));
+a {
+    margin-left: 20px;
 }
 }
