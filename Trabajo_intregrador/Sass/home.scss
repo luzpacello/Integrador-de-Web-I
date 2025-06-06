@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    flex: 1; // ocupa todo el espacio disponible
+            //NO LO QUITEN, ENSERIO LO DIGO 👺
+    padding: 10px;
+}
+.navbar{
+    @include fondo-degradado($color-primario, $color-secundario, 45deg);
+}
+.navbar-toggler{
+    background-color: antiquewhite;
+}
+.carousel-inner img {
+    width: 100%;
+}
+footer{
+    @include fondo-degradado($color-primario-footer, $color-secundario-footer, 45deg);
+}
