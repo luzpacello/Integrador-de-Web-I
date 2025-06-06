@@ -4,8 +4,7 @@ header {
 }
 
 .owca {
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  background: linear-gradient(45deg, #007bff, #00c6ff);
   border: 2px solid gray;
   margin-top: 15px;
   min-width: 320px;
@@ -68,8 +67,7 @@ body {
     justify-content: center;
   }
   .owca {
-    -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
+    background: linear-gradient(45deg, #007bff, #00c6ff);
     border: 2px solid gray;
     margin-top: 20px;
     min-width: 300px;
@@ -87,4 +85,4 @@ body {
     display: flex;
     justify-content: center;
   }
-}/*# sourceMappingURL=Sass_Carga.css.map */
+}/*# sourceMappingURL=carga.css.map */

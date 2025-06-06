@@ -1,9 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
 header {
     display: flex;
     justify-content: center;
 }
 .owca {
-    backdrop-filter: blur(7px);     
+    @include fondo-degradado ($color-primario, $color-secundario, 45deg);    
     border: 2px solid gray;
     margin-top: 15px;
     min-width: 320px;    
@@ -66,7 +69,7 @@ body {
     justify-content: center;
  }
    .owca {
-    backdrop-filter: blur(7px);     
+    @include fondo-degradado ($color-primario, $color-secundario, 45deg);      
     border: 2px solid gray;
     margin-top: 20px;
     min-width: 300px;    
