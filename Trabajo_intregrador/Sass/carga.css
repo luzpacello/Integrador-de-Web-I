@@ -4,13 +4,13 @@ header {
 }
 
 .owca {
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  background: linear-gradient(20deg, rgba(0, 255, 136, 0.9333333333), #1bc1f8);
   border: 2px solid gray;
   margin-top: 15px;
   min-width: 320px;
-  font-size: 25px;
+  font-family: "Arial", "Oswald-Regular";
   font-weight: bold;
+  font-size: 25px;
   border-radius: 1.5em;
 }
 .owca .perry {
@@ -37,8 +37,7 @@ nav {
   border: 5px transparent;
   border-radius: 1.5em;
   font-weight: bold;
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   padding: 20px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
@@ -47,8 +46,7 @@ nav {
   display: inline-block;
   border: 5px transparent;
   border-radius: 1.5em;
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   padding: 17px;
   font-weight: bold;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
@@ -68,13 +66,13 @@ body {
     justify-content: center;
   }
   .owca {
-    -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
+    background: linear-gradient(20deg, rgba(0, 255, 136, 0.9333333333), #1bc1f8);
     border: 2px solid gray;
     margin-top: 20px;
     min-width: 300px;
+    font-family: "Savate-ExtraLight", "Oswald-Regular";
+    font-weight: normal;
     font-size: 25px;
-    font-weight: bold;
     border-radius: 1.5em;
   }
   .owca .perry {

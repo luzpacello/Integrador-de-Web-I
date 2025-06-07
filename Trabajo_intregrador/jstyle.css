@@ -1,0 +1,14 @@
+
+.titulo{color:orange; font-size: 3rem;}
+    .juan {
+  background-color:aquamarine ;
+  padding: 2rem;
+  margin: 1rem;
+  border-style: solid;
+  border-color: black;
+}
+body{
+  background-image: url("imgFicha/Perry-The-Platypus-PNG-HD.png");
+  background-size: 6rem;
+}
+h2{color: red;}

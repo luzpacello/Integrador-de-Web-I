@@ -1,82 +1,116 @@
 body {
-  background: linear-gradient(to bottom, white, blue);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(to bottom, white, rgb(54, 54, 255));
+  min-height: 100vh;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-  width: 95%;
-  padding: 0 2rem;
-  margin-left: 10px;
+header,
+footer {
+  background: linear-gradient(to left, rgb(0, 175, 137), rgb(72, 0, 72));
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   border-radius: 1.5rem;
-  background: linear-gradient(to left, rgb(0, 175, 137), rgb(72, 0, 72));
-}
-header h1 {
-  width: auto;
-  text-align: center;
-  margin-left: 25px;
-}
-header .opciones {
-  width: auto;
-  text-align: right;
-  margin-left: 70%;
-  margin-right: 5%;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  flex-direction: row;
 }
 
 .logo {
-  margin: 20px;
   height: 70px;
   width: auto;
   border-radius: 50%;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2rem;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.Contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.producto-card {
   background: linear-gradient(to bottom, rgb(164, 163, 163), rgb(63, 63, 63));
   box-shadow: 0 8px 20px black;
   border-radius: 1.5rem;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  margin-top: 2rem;
-  margin-left: 20px;
-  padding: 2rem;
-}
-.Contenedor img {
-  height: 150px;
-  width: auto;
+  padding: 1rem;
+  color: white;
 }
 
 footer {
+  background: linear-gradient(to right, rgb(0, 175, 137), rgb(150, 17, 17));
+}
+
+.linklist img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  header,
+  footer {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 1rem;
+  }
+  .logo {
+    height: 50px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .producto-card {
+    padding: 0.5rem;
+  }
+  .producto-card p {
+    font-size: 0.9rem;
+  }
+  .linklist img {
+    height: 40px;
+    margin: 0 5px;
+  }
+}
+main {
+  flex: 1 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .categoria {
+  margin-bottom: 3rem;
+}
+main .categoria h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+main .categoria .productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main .categoria .productos .Contenedor {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: linear-gradient(to bottom, rgb(55, 32, 255), rgb(103, 212, 255));
+  box-shadow: 0 8px 20px black;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+main .categoria .productos .Contenedor img {
+  height: 100px;
+  width: auto;
+}
+main .categoria .productos .Contenedor p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  main .categoria .productos .Contenedor {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+footer {
+  flex-shrink: 0;
   position: fixed;
   bottom: 0;
   display: flex;
   flex-direction: row;
-  gap: 50%;
+  flex-wrap: wrap;
+  gap: clamp(10px, 50%, 50%);
   width: 95%;
   padding: 0 2rem;
   margin-left: 10px;
@@ -87,15 +121,4 @@ footer {
 }
 footer a {
   margin-left: 20px;
-}
-
-.linklist {
-  display: flex;
-  flex-direction: row;
-}
-.linklist img {
-  margin: 20px;
-  height: 50px;
-  width: auto;
-  border-radius: 50%;
 }/*# sourceMappingURL=SassList.css.map */
