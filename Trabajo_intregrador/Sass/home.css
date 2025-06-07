@@ -24,6 +24,9 @@
 }
 
 h2 {
+  font-family: "Courier New", "Oswald-Regular";
+  font-weight: bold;
+  font-size: 25px;
   color: rgb(162, 212, 255);
 }
 
@@ -44,7 +47,8 @@ h2 {
 .card-img-top {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact-sect {

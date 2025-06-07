@@ -23,6 +23,7 @@
     background-color: antiquewhite;
 }
 h2{
+    @include combo-fonts('Courier New', 'Oswald-Regular', bold);
     color: rgb(162, 212, 255);
 }
 .nav-link{
